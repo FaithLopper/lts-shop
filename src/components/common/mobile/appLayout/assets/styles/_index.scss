@@ -1,0 +1,12 @@
+@import 'antd/dist/antd.css';
+// @import 'antd-mobile/dist/antd-mobile.css';
+// @import "quill.snow.css";
+@import "../../../../commonStyles/common";
+@import "../../../../commonStyles/variables";
+@import "style";
+body.bd-mobile {
+    @import '../../components/header/_header.scss';
+    @import '../../components/body/_body.scss';
+    @import '../../components/footer/_footer.scss';
+    @import '../../components/pages/Auth/auth';
+}

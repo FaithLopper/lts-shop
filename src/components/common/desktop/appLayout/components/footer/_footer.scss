@@ -1,0 +1,78 @@
+.footer{
+  background-color: var(--background-color-dark);
+  height: 18.75rem;
+  position: relative;
+}
+
+.footer__container{
+}
+
+.footer__content{
+  grid-template-columns: repeat(2, 0.5fr) 2fr;
+  color: var(--body-color);
+  column-gap: 10rem;
+  padding:3rem 3rem 0;
+}
+
+.footer__footer-nav{
+  grid-column: 1/4
+}
+
+.footer__social-nav{
+  justify-self: right;
+}
+
+.content__nav-header{
+  font-family: Montreal;
+  word-spacing: -0.2rem;
+  font-size: 0.875rem;
+  margin: 0.4rem 0;
+}
+
+.content__nav-body{
+  font-size: 0.75rem;
+  color: var(--input-color);
+  margin: 0.4rem 0;
+}
+
+.footer__footer-nav{
+  margin-top: 20px;
+}
+
+.footer__info{
+  color: var(--input-color);
+  
+}
+
+.footer__info:first-child{
+  font-size: 0.675rem;
+  color: var(--body-color);
+}
+
+.footer__copyright{
+  color: var(--body-color);
+  text-align: center;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--input-color);
+  font-size: 10px;
+}
+
+
+.footer__social-nav{
+  display: flex;
+  column-gap: 0.5rem;
+}
+.content__nav-social{
+  i{
+    color: var(--background-color-dark);
+    font-size: 1.5rem;
+  }
+  height: fit-content;
+  background-color: var(--input-color);
+  border-radius: 1.25rem;
+  padding: 0.25rem;
+  line-height: 0.2rem;
+}

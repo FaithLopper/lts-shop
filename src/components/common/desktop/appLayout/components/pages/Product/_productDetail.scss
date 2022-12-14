@@ -1,0 +1,103 @@
+.ant-radio-button-wrapper:hover{
+    color: var(--title-color-dark);
+}
+
+.ant-radio-button-wrapper{
+    border-left-width: 1px;
+    text-align: center;
+    line-height: 0px;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+}
+
+.product__detail{
+    padding-top: 6rem;
+    .product__detail__container{
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+        max-width: 1350px;
+        min-height: 60vh;
+    }
+
+    .product__right{
+        padding: 0 2rem;
+    }
+
+    .product__image{
+        height: 550px;
+        width: 880px;
+        object-fit: cover;
+    }
+
+    .product__name{
+        font-size: 1.8rem;
+    }
+
+    .product__price{
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+
+        s{
+            color: var(--input-color);
+        }
+    }
+
+    .product__size-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.4rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .product__variant-title{
+        display: flex;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        justify-content: space-between;
+
+        .size__table{
+            color: var(--input-color);
+            cursor: pointer;
+        }
+    }
+
+    .round-button{
+        margin-bottom: 3.5rem;
+        font-size: 1.1rem;
+        line-height: 0.1rem;
+        padding: 2rem 2rem;
+    }
+
+    .product__description{
+        font-size: 1rem;
+    }
+
+    .ant-radio-button-wrapper-checked{
+        span{
+            color: var(--title-color-dark) !important;
+        }
+    }
+
+    .product__color-wrapper{
+        grid-template-columns: repeat(5, 1fr);
+        margin-bottom: 1.5rem;
+        gap: 2px;
+        .ant-radio{
+            display: none;
+        }
+        .ant-radio-wrapper{
+            span{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        
+        img{
+            border-radius: 3px;
+        }
+
+        .ant-radio-wrapper-checked img{
+            border: 1px solid var(--title-color-dark);
+        }
+    }
+}
+

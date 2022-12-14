@@ -1,0 +1,37 @@
+@import "./hotnew";
+@import "./nav";
+@import "./menu";
+
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu {
+  min-height: 2.25rem;
+  display: flex;
+  justify-content: end;
+  background-color: var(--content-color);
+  transition: opacity 2s linear;  
+  transform:translate(0);
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.nav {
+  background-color: var(--body-color);
+  min-height: 3.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hot-new {
+  background-color: var(--content-color);
+  min-height: 3.625rem;
+}

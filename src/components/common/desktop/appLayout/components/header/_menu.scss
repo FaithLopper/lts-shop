@@ -1,0 +1,85 @@
+.menu__list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: var(--mb-1);
+}
+
+.menu__link{
+    color: var(--title-color);
+    font-size: 0.8rem;
+    font-weight:var(--font-light);
+}
+
+.menu__line{
+    width: 1px;
+    height: 30%;
+    display: block;
+    background-color: var(--title-color-dark);
+}
+
+.menu__item:hover a{
+    color: var(--input-color) !important;
+}
+
+.menu__icon-user{
+    font-size: 1.3rem;
+    margin-left: -0.55rem;
+    padding: 0 0.4rem;
+    transition: all 0.3s;
+    color:var(--title-color-dark);
+    line-height: 2rem;
+}
+
+.menu__icon-user:hover{
+    background-color: var(--blur-color);
+    border-radius: 33px;
+}
+
+.user__dropdown{
+    opacity: 0;
+    visibility:hidden;
+    position:absolute;
+    transition:opacity 0.2s linear;
+    background-color: var(--body-color);
+    z-index: 1000;
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    // right: 0.100rem
+    right: 0;
+    top: 2.25rem;
+    width: 15rem;
+    font-size: 0.875rem;
+    .user__option-header,
+    .user__option *:hover{
+        color: var(--title-color-dark);
+        cursor: pointer;
+    }
+    
+    .user__option *{
+        color: var(--input-color);
+        cursor: pointer;
+    }
+    .user__option-header{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: var(--title-color-dark);
+        cursor:default !important;
+    }
+}
+
+.drop__down-hover{
+    height: 100%;
+    line-height: 2.2rem;
+}
+
+.drop__down-hover:hover .user__dropdown{
+    opacity: 1 !important;
+    visibility:visible !important;
+}
+
+.user__dropdown:hover{
+    opacity: 1;
+    visibility:visible;
+}
+

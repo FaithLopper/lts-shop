@@ -1,0 +1,17 @@
+@import "../../../../commonStyles/common";
+@import "../../../../commonStyles/variables";
+@import "style";
+body.bd-desktop {
+    @import '../../components/header/_header.scss';
+    @import '../../components/body/_body.scss';
+    @import '../../components/footer/_footer.scss';
+    @import '../../components/pages/Auth/auth';
+    @import '../../components/pages/Cart/cart';
+    @import '../../components/pages/Checkout/checkout';
+    @import '../../components/pages/Summary/summary';
+    @import '../../components/body/category/_category.scss';
+    @import '../../components/body/product/_product.scss';
+    @import '../../components/pages/New/newDetail';
+    @import '../../components/pages/Product/productDetail';
+    @import '../../components/pages/Profile/profile';
+}

@@ -1,0 +1,81 @@
+.new {
+  // background-color: #E1DCA8;
+  padding-bottom: 0 !important;
+}
+
+.new__container {
+  // background-color: #ECDE5D;
+  // height: 50rem;
+  overflow-y: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 6rem;
+}
+
+.new__pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.new__item-title {
+  font-size: var(--h2-font-size);
+  font-weight: bold;
+  word-spacing: -0.1875rem;
+  line-height: 1.6875rem;
+  margin-bottom: 0.3rem;
+}
+.new__item-description,
+.new__item-createdDate {
+  // font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  color: var(--input-color);
+}
+
+.new__item-description {
+//   letter-spacing: 0.25px;
+  font-size: 1.2rem;
+  margin: 1.25rem 0 0.3rem;
+}
+
+.new__pagination{
+    height: 8.5625rem;
+    background-color: rgb(240, 240, 240);
+    align-items: center;
+}
+
+.ant-pagination-item{
+    font-size: 1rem;
+    border: none !important;
+    color: var(--input-color) !important;
+    background-color: rgb(240, 240, 240) !important;
+    font-weight: var(--font-medium);
+    a{
+      color: var(--input-color) !important;
+    }
+}
+
+.ant-pagination-item-active{
+    a{
+
+        color: var(--title-color-dark) !important;
+    }
+}
+
+.ant-pagination-item-link{
+    background-color: rgb(240, 240, 240) !important;
+    border: none;
+    color: var(--title-color-dark) !important;
+    font-size: 1.1rem;
+    span{
+        padding-top: 8px;
+    }
+}
+
+.ant-pagination{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.section__loading{
+ display: flex;
+ justify-content: center;
+}

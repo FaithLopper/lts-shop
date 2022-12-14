@@ -1,0 +1,21 @@
+.menu__list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: var(--mb-1);
+}
+
+.menu__link{
+    color: var(--title-color);
+    font-size: 0.8rem;
+    font-weight:var(--font-light);
+}
+
+.menu__line{
+    width: 1px;
+    height: 30%;
+    display: block;
+    background-color: var(--title-color-dark);
+}
+
+

@@ -1,0 +1,135 @@
+.footer {
+  height: 522px;
+  background-color: var(--background-color-dark);
+  color: #fff;
+  padding: 4.375rem 0rem 3.75rem 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 26.875rem 15.625rem 15.625rem 15.625rem 15.625rem;
+  grid-template-rows: 10rem 8.75rem 6.25rem;
+  gap: 0rem 0rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "findstore product about support contact"
+    "findstore social mail store-logo store-logo"
+    "copyright copyright copyright store-logo store-logo";
+    //verify hasnt use yet
+}
+
+.px-10 {
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+
+.product {
+  grid-area: product;
+}
+
+.about {
+  grid-area: about;
+}
+
+.support {
+  grid-area: support;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.social {
+  grid-area: social;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.findstore {
+  grid-area: findstore;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright {
+  grid-area: copyright;
+  margin: auto;
+  
+  h5 {
+    color: #7e7e7e;
+    font-size: 1rem;
+  }
+}
+
+.store-logo {
+  grid-area: store-logo;
+  margin: auto;
+}
+
+.verify {
+  grid-area: verify;
+}
+
+.find-store-btn {
+  border-radius: 0rem;
+  background-color: #f15e2c;
+  border: #f15e2c .0625rem solid;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  width: 17.4375rem;
+  height: 2.5rem;
+  display: block;
+  margin-top: 1.25rem;
+
+  &:hover {
+    background-color: #ff4000;
+  }
+}
+
+h4 {
+  color: white;
+  margin-bottom: .8125rem;
+  font-size: 1.4375rem;
+  &:hover {
+    color: #f15e2c;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li > a {
+  color: #7e7e7e;
+  font-size: 1rem;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.social-link {
+  img {
+    margin-right: 0.5rem;
+  }
+}
+
+.inputRecieveMail {
+  input {
+    color: #7e7e7e;
+    width: 10.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    border-radius: 0rem;
+    outline: none;
+  }
+
+  button {
+    height: 2.4375rem;
+    margin-left: 0.2rem;
+  }
+}
