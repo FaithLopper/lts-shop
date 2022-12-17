@@ -24,6 +24,7 @@ export const actions = {
     getProfile: createAction(actionTypes.GET_PROFILE),
     clearProfile: createAction(actionTypes.CLEAR_PROFILE),
     requestForget: createAction(actionTypes.REQUEST__FORGET),
+    forgetPassword: createAction(actionTypes.FORGET_PASSWORD),
     // logout: () => {
     //     if(window.localStorage && window.localStorage.getItem(StorageKeys.userData)) {
     //         window.localStorage.removeItem(StorageKeys.userData);
