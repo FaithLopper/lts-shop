@@ -65,7 +65,8 @@ class MasterLayout extends Component {
     const { auth, history, location } = this.props;
     if (auth) {
       if (!this.state.userData) {
-        history.push("/login");
+        if (location.pathname === "/login") history.push("/");
+        else history.push("/login");
       }
     }
   }
