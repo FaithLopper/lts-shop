@@ -64,10 +64,12 @@ class MasterLayout extends Component {
   checkPermission() {
     const { auth, history, location } = this.props;
     if (auth) {
-      if (!this.state.userData) {
-        if (location.pathname === "/login") history.push("/");
-        else history.push("/login");
-      }
+      if (this.state.userData) {
+        if (location.pathname === "/login" || location.pathname === "/register"){
+          history.push("/");
+        }
+      } else if(location.pathname !== '/register')
+          history.push("/login");
     }
   }
 
